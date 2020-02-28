@@ -1,18 +1,18 @@
-#cmake基本使用练习
+# cmake基本使用练习
 
-###编译
+### 编译
 ```
 ./build.sh
 ```
 可以看到在bin和lib文件夹下有编译生成的结果
-###安装
+### 安装
 ```
 cd build
 make install
 ```
 可以看到软件已经按照配置安装到了`/opt`下
 
-###使用find_pakage
+### 使用find_pakage
 一些成熟的库会发布`<name>config.cmake`文件，称之为配置文件，find_pakage会自动搜索`${CMAKE_MODULE_PATH}`，`/usr/share`，`/usr/local/share`下是否有该模块的配置文件。如果找到，则用户能在cmake中直接使用`${<name>_INCLUDE}`、`${<name>_LIBS}`等变量，给用户带来极大的方便
 
 例如opencv有提供OpenCVConfig.cmake文件，那么可以这么使用cmake
