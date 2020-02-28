@@ -52,7 +52,7 @@ install(TARGETS hello add
 	LIBRARY DESTINATION lib
 	ARCHIVE DESTINATION lib)
 #配置脚本程序的安装位置
-install(PROGRAMS scripts.sh DESTINATION .)
+install(PROGRAMS build.sh DESTINATION .)
 #配置文本文件的安装位置
 install(FILES README.md DESTINATION .)
 #配置目录的安装位置
