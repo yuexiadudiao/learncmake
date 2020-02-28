@@ -8,7 +8,8 @@
 ### 安装
 ```
 cd build
-make install
+#注意权限
+sudo make install
 ```
 可以看到软件已经按照配置安装到了`/opt`下
 
@@ -27,4 +28,3 @@ target_link_libraries(cv_demo ${OpenCV_LIBS})
 SET(OpenCV_DIR /usr/share/OpenCV/)#这里写自己需要的opencv版本的模块位置
 FIND_PACKAGE(OpenCV REQUIRED)
 ```
-
