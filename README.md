@@ -18,7 +18,7 @@ sudo make install
 
 例如opencv有提供OpenCVConfig.cmake文件，那么可以这么使用cmake
 ```cmake
-find_pakage(OpenCV)
+find_package(OpenCV)
 add_executable(cv_demo test.cpp)
 target_link_libraries(cv_demo ${OpenCV_LIBS})
 ```
